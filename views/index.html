@@ -5,6 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="../public/css/zinco.css">
 	<meta name="description" content="Our popular restaurants, many of them recognised for their architectural value, provide the ideal backdrop to enjoy our food and friendly service.">
 	<meta name="keywords" content="italian, restaurant, zinco, pizza, pasta, borehamwood, watford">
+  <link rel="stylesheet" href="../public/css/flexslider.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="../public/js/jquery.flexslider.js"></script>
+  <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 </head>
 <body>
 	<header>
@@ -18,9 +26,9 @@
             <li><a href="/watford">Watford</a></li>
         </ul>
       </li>
-      <li><a href="/food">Our Food</a>
+      <li><a href="food.html">Our Food</a>
         <ul>
-            <li><a href="/menu.pdf">Menu</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="/deserts.pdf">Deserts</a></li>
             <li><a href="/wine.pdf">Wine</a></li>
         </ul>
@@ -42,11 +50,34 @@
 	</header>
 	<div id="main">
 	   <div id="content">
-        <div id="banner">
+      <div id="banner">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="../public/images/prawns.jpg" />
+            </li>
+            <li>
+              <img src="../public/images/vongole.jpg" />
+            </li>
+<!--             <li>
+              <img src="slide3.jpg" />
+            </li> -->
+          </ul>
         </div>
-			<div>
-		</div>
-	</div>
+        </div>
+        <div id="index-description">
+          <p>Welcome to ZINCO Italian Eateries, exciting local neighbourhood restaurants offering a truly authentic and informal dining experience.
+   
+          Sapori D'Italia means flavours of Italy, and that is exactly what you will find at our Eateries.
+   
+          At ZINCO we are passionate about our food and wines. Our focus is to bring a true taste of Italy to our customers in a warm and welcoming atmosphere, with careful, friendly service.</p>
+
+          <p>ZINCO Italian Eateries are ideal venues for a meal with family and friends. We also offer a perfect setting for larger groups celebrating birthdays, anniversaries, staff parties and other special events.
+   
+          Don't just take our word for it. In an interview with The Mail on Sunday, Gino D'Acampo, celebrity TV chef and winner of "I'm a Celebrity... Get Me Out Of Here!" said "...My favourite local restaurant is the Italian ZINCO in Shenley Road, Borehamwood." Come and see for yourself and experience a true taste of Italy.</p>
+        </div>
+	   </div>
+  </div>
 	<footer>
 	</footer>
 </body>
